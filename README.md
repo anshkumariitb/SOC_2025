@@ -1,5 +1,6 @@
 # SOC2025
 My Web Development Learning Journey
+
 Week 1 Summary
 This week, I learned the basics of HTML including how to create structured web pages using tags like <html>, <head>, <body>, <a>, <p>, <ul>, <table>, and <form>. I built a simple portfolio website with navigation links, personal information, interests, and a project table. I also created a student admission form using various input types like text, radio, date, select, and textarea.
 
