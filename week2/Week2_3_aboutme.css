@@ -1,0 +1,33 @@
+
+body{
+    padding: 10px;
+}
+.navigation{
+    background-color: rgb(142, 244, 252);
+    padding: 10px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: calc(33vw - 112px);
+    font-size: 25px;
+}
+.container{
+    display: flex;
+    background-color: pink;
+    gap: calc(31vw - 270px);
+    padding: 20px;
+}
+caption{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+table{
+    width: 100%;
+}
+th{
+    font-size: 20px;
+}
+th, td {
+    padding: 5px 3px;
+}

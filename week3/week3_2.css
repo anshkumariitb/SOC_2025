@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 340px;
+    width: 340px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.box{
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+.first{
+    grid-column:1/2 ;
+    grid-row: 1/2;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    animation: motion1 0.5s ease-in 0s infinite normal;
+    align-self: center;
+    left: -25px;
+}
+@keyframes motion1 {
+    0%{
+        transform: translateX(0px);
+    }
+    90%{
+        transform: translateX(45px);
+    }
+    100%{
+        transform: translateX(50px);
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+}
+.second1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    animation: motion2 0.5s ease-in-out 0s infinite normal;
+    top: -10px;
+    left: -20px;
+}
+.second2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    animation: motion2 0.5s ease-in-out 0.25s infinite normal;
+    top: -10px;
+}
+@keyframes motion2 {
+    0%{
+        transform: translate(0px);
+    }
+    90%{
+        transform: translate(20px,30px);
+    }
+    100%{
+        transform: translate(20px,30px);
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+}
+.third1{
+    grid-column:3/4 ;
+    grid-row: 1/2;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    align-self: self-end;
+    left: -14px;
+    top: -20px; 
+    animation: motion3 1s linear 0s infinite normal;
+}
+.third2{
+    grid-column:3/4 ;
+    grid-row: 1/2;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    align-self: self-end;
+    right: -14px; 
+    top: -20px;
+    animation: motion3 1s linear 0.5s infinite normal;
+}
+@keyframes motion3 {
+    50%{
+        transform: translateY(-50px);
+    }
+}
+.fourth{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 5px;
+    background-color: black;
+    justify-self: start;
+    right: -30px;
+    animation: motion4 1s linear infinite;
+}
+@keyframes motion4 {
+    0% {
+        width: 0;
+        transform: translate(0px);
+    }
+    50% {
+        width: 50px;
+        transform: translate(0px);
+    }
+    100% {
+        width: 0;
+        transform: translateX(50px);
+    }
+}
+.fifth1{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 10px solid rgb(150, 150, 150);
+    border-bottom: 10px solid white;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    animation: rotation1 1s linear 0s infinite normal;
+}
+.fifth2{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border-bottom: 5px solid rgb(150, 150, 150) ;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    animation: rotation2 0.5s 0s infinite normal;
+}
+@keyframes rotation1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.sixth1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 20px;
+    width: 3px;
+    background-color: black;
+    left: -6px;
+    top: -20px;
+    animation: motion6 0.5s linear 0s infinite ;
+}
+.sixth2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 20px;
+    width: 3px;
+    background-color: black;
+    right: -6px;
+    animation: motion6 0.5s linear 0.25s infinite ;
+}
+@keyframes motion6 {
+    80%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(30px);
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+}
+.seventh{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    animation: motion7 2s linear 0s infinite normal;
+    top: -10px;
+    left: -10px;
+}
+@keyframes motion7 {
+    25%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translate(20px, 20px);
+    }
+    75%{
+        transform: translateY(20px);
+    }
+}
+.eighth{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    align-self: flex-end;
+    animation: motion8 1s ease-in 0.5s infinite normal;
+}
+@keyframes motion8 {
+    50%{
+        transform: translateY(-50px);  /* why negative sign*/
+    }
+    100%{
+        transform: translateY(-50px) scale(5);
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+}
+.ninth1{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    animation: motion7 2s linear 0s infinite normal;
+    top: -10px;
+    left: -10px;
+}
+.ninth2{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    animation: motion7 2s linear 1s infinite normal;
+    top: -10px;
+    left: -10px;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding: 40px;
+}
+p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+.container{
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+a{
+    background-color: rgb(250, 162, 0);
+    border-radius: 20%;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.box{
+    display: inline-block;
+    margin: 5px;
+    background-color: rgb(210, 210, 210);
+    height: 420px;
+    width: 300px;
+    border-radius: 20px;
+    transition: transform 1s ease, background-color 1s ease;
+    overflow: hidden;
+}
+.box:hover {
+    transform: scale(1.05);
+    background-color: rgb(135, 135, 135);
+    color: white;
+}

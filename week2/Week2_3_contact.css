@@ -1,0 +1,16 @@
+body{
+    padding: 7px;
+}
+.navigation{
+    background-color: rgb(142, 244, 252);
+    padding: 10px;
+}
+.navigation a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: calc(32vw - 112px);
+    font-size: 30px;
+}
+pre{
+    font-size: 20px;
+}

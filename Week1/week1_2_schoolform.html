@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Student Admission Form</header></h2>
+    <H3><u>Student Details</H3></u>
+    <form action="/action.php">
+        <label>
+      Full Name<input type="text" placeholder="Enter your full name" >
+   </label>
+   <br><br>
+   <label>
+      Gender : Male <input type="radio" value="male" name="gender">
+   </label>
+   <label>
+      Female <input type="radio" value="Female" name="gender">
+   </label>
+   <label>
+      Other <input type="radio" value="Other" name="gender">
+   </label>
+   <br><br>
+     <label>
+      Date of Birth <input type="date" >
+   </label>
+   <br><br>
+    <label >
+      Blood Group<select name="Blood Group">
+        <option value="Select">Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+               </select>
+
+   <br><br>
+   <label >
+      Category<select name="Category">
+        <option value="Select">Select</option>
+                <option value="General">General</option>
+                <option value="OBC 1">OBC 1</option>
+                <option value="OBC 2">OBC 2</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+               </select>
+   </label>
+   <br><br>
+       <label>
+      Language<input type="text" placeholder="Mother Tongue" >
+   </label>
+   <br><br>
+   <H3><u>Others Details</H3></u>
+    <label>
+      Father Name<input type="text" placeholder="Enter your father name" >
+   </label>
+   <br><br>
+    <label>
+      Mother Name<input type="text" placeholder="Enter your mother name" >
+   </label>
+   <br><br>
+   <label>
+    Address <textarea name="address" placeholder="write your address" rows="4"></textarea>
+   </label>
+   <br><br>
+   <label for="city">
+            City: <input type="text" name="city" id="city" placeholder="Gaya">
+        </label>
+        <br><br>
+        <label for="State">
+            State: <input type="text" name="State" id="State" placeholder="Bihar">
+        </label>
+        <br><br>
+        <label for="PIN">
+            PIN: <input type="number" name="PIN" id="PIN" placeholder="123456">
+        </label>
+        <br><br>
+<label >
+            Phone number: <input type="number" placeholder="Number">
+        </label>
+        <br><br>
+        <label >
+            EMAIL: <input type="email" placeholder="abc@gmail.com">
+        </label>
+        <br><br>
+         <input type="submit"  >
+        <input type="reset">
+ </form>
+</body>
+</html>
