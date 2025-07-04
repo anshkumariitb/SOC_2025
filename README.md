@@ -12,3 +12,6 @@ This week, I learned about CSS Grid and CSS animations. I used @keyframes to cre
 
 Week 4 Summary
 This week, I learned how to make web pages responsive using media queries and flexbox. I designed layouts that adapt to different screen sizes and practiced using flex-wrap, gap, vw units, and responsive font/image scaling. I built a responsive design agency page and a flexible layout grid with boxes adjusting at different breakpoints.
+
+Week 5 Summary 
+I explored Bootstrap through a hands-on tutorial where I learned to build a responsive blog website. I used components like navbar, cards, buttons, and carousel to design different sections. The tutorial also covered the grid system and how to structure layouts effectively. Overall, it was a practical and engaging way to understand front-end development with Bootstrap.
