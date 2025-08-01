@@ -25,6 +25,8 @@ function genqr(text) {
 generateqr.onclick = () => {
     genqr(input.value);
 };
+
+// giving download option according to my wish
 downloadqr.onclick = () => {
     let img = qrdiv.querySelector("img");
 
